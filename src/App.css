@@ -1,0 +1,901 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#cookies {
+  position: fixed;
+  height: auto;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  z-index: 100;
+  padding: 1em;
+}
+
+#cookies p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#ok-button {
+  display: block;
+  padding: 0.2em 2em;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+
+.black-panter {
+  color: #000;
+}
+
+.snow-white {
+  color: #fff;
+}
+
+.white-coco {
+  color: #F0EDE5;
+}
+
+.orangina {
+  color: #ffde59;
+}
+
+.warm-sand {
+  color: #b1803b;
+}
+
+.dark-blue {
+  color: #2E4A62;
+}
+
+.pale-blue {
+  color: #66BAC6;
+}
+
+.grey-blue {
+  color: #556D8E;
+}
+
+.pale-grey {
+  color: #B4B7BA;
+}
+
+
+
+.black-panter-back {
+  background-color: #000;
+}
+
+.snow-white-back {
+  background-color: #fff;
+}
+
+.white-coco-back {
+  background-color: #F0EDE5;
+}
+
+.orangina-back {
+  background-color: #ffde59;
+}
+
+.warm-sand-back {
+  background-color: #C0AB8E;
+}
+
+.dark-blue-back {
+  background-color: #2E4A62;
+}
+
+.pale-blue-back {
+  background-color: #8CCBD5;
+}
+
+.grey-blue-back {
+  background-color: #556D8E;
+}
+
+.pale-grey-back {
+  background-color: #B4B7BA;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+  .space-between {
+    width: 100%;
+    height: 15vh;
+    background-color: transparent;
+}
+
+
+#landing {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://res.cloudinary.com/jimbocloud/image/upload/v1561811104/Portfolio/background-landing-mobile.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+  #landing {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: url("https://res.cloudinary.com/jimbocloud/image/upload/v1561811104/Portfolio/background-landing-mobile.jpg");
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+
+
+  #desktop-navbar {
+      display: none;
+  }
+
+  #mobile-navbar {
+      width: 100%;
+      height: 15vh;
+      position: fixed;
+      z-index: 99;
+      box-shadow: 0px 5px 5px -5px grey;
+  }
+
+  #menu-icon {
+      height: 15vh;
+      width: 10vw;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+  }
+
+  #menu-icon div {
+      width: 10vw;
+      height: 1vh;
+  }
+
+  #menu-icon div.bar {
+      margin-bottom: 2vh;
+  }
+  
+  #disappear {
+      display: block;
+  }
+  
+  #menu-icon-opened {
+      display: none;
+      position: absolute;
+  }
+  
+  #menu-icon-opened div {
+      width: 10vw;
+      height: 1vh;
+  }
+  
+  #menu-icon-opened div.rotate-one {
+      position: absolute;
+      transform: rotate(45deg);
+  }
+  
+  #menu-icon-opened div.rotate-two {
+      position: absolute;
+      transform: rotate(-45deg);
+  }
+
+  #mobile-navbar ul {
+      width: 100%;
+      height: 85vh;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  ul#menu-list {
+      display: none;
+  }
+
+  #menu-list li {
+      list-style-type: none;
+      width: 100%;
+      height: 17vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+      font-family: 'Allerta Stencil', sans-serif;
+  }
+
+  #menu-list li a {
+      text-decoration: none;
+      color: #C0AB8E;
+      font-size: 1.5em;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+
+  .home-button {
+      color: #2E4A62 !important;
+  }
+
+  #menu-list li a:hover {
+      padding: 0 5vw;
+      border-left: 5px solid #F0EDE5;
+      border-right: 5px solid #F0EDE5;
+      color: #2E4A62;
+  }
+
+  .menu-division {
+      border-top: 1px solid red;
+      width: 50%;
+      margin: 0 auto;
+  }
+
+  .title {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+  }
+
+  .container {
+      width: 230px;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      top: 16vh;
+  }
+
+  img.logo {
+      width: 1%;
+      height: auto;
+  }
+
+  .name {
+      text-align: center;
+      font-family: 'Allerta Stencil', sans-serif;
+      font-size: 14px;
+      margin-top: 10px;
+  }
+
+
+
+  #about {
+      height: auto;
+      width: 100%;
+      padding-bottom: 4em;
+  }
+
+  .header {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-family: 'Allerta Stencil', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 3vh;
+  }
+
+  .text {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 3vh;
+  }
+
+  #profile-photo {
+      width: 70%;
+      height: auto;
+      display: block;
+      box-shadow: 1px 1px 5px grey;
+      margin: 1.5em auto 0 auto;
+  }
+
+  .description-desktop {
+      display: none;
+  }
+
+  .description-mobile {
+      list-style-type: none;
+      line-height: 1.5em;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      color: #000;
+      margin-bottom: 2.5em;
+  }
+
+  .text p {
+      width: 100%;
+      font-size: 1em;
+      text-align: left;
+      line-height: 1.5em;
+      font-family: 'Montserrat', sans-serif;
+      margin: 1em auto;
+  }
+
+
+
+  #highlights {
+      width: 100%;
+      height: auto;
+      padding-bottom: 4em;
+  }
+
+  article.wrapper {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between-proj;
+  }
+
+  .wrapper {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .wrapper p {
+      font-size: 1em;
+      text-align: left;
+      line-height: 1.3em;
+      font-family: 'Montserrat', sans-serif;
+      margin: 1em auto 0 auto;
+  }
+
+  .skills li {
+      width: 100%;
+      text-align: center;
+      margin: 5vh 0vw;
+      list-style-type: none;
+      font-family: 'Allerta Stencil', sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+  }
+
+  .skills li img {
+      margin: 0 auto;
+      display: block;
+      width: 8em;
+  }
+ 
+
+
+
+  #myproject {
+      height: auto;
+      width: 100%;
+      padding-bottom: 4em;
+  }
+
+  .opinions {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .project {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 2px solid #C0AB8E;
+  }
+
+  .project img {
+      width: 300px;
+      height: auto;
+      display: block;
+      position: relative;
+      right: 50px;
+  }
+
+
+
+  #contact {
+      height: auto;
+      width: 100%;
+      background-image: url("https://wallpapercave.com/wp/wp7453739.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  .form p {
+      margin: 2em 0;
+  }
+
+  input {
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 1px 1px 5px rgb(165, 160, 160);
+      opacity: 0.8;
+      border: 1px solid #fff;
+      padding: 0.5em;
+      text-transform: uppercase;
+      width: 100%;
+  }
+
+  ::placeholder {
+      color: #c4bbbb;
+      text-align: left top;
+  }
+
+  textarea {
+      font-family: 'Montserrat', sans-serif;
+      height: 10em;
+      width: 100%;
+      box-shadow: 1px 1px 5px grey;
+      opacity: 0.8;
+      border: 1px solid #fff;
+      padding: 0.5em;
+      text-transform: uppercase;
+  }
+
+  .submit {
+      font-family: 'Montserrat', sans-serif;
+      width: 50%;
+      display: block;
+      margin: 0 auto 2.5em auto;
+  }
+
+
+ 
+
+  footer {
+      width: 100%;
+      height: auto;
+      background-color: #000;
+      box-shadow: 1px 1px 10px grey;
+      padding: 1em 0;
+  }
+
+  .social-icons {
+      text-align: center;
+  }
+
+  .social-icons img {
+      width: 12vh;
+      height: auto;
+      padding: 1vh;
+      margin: 2vh;
+      display: inline-block;
+  }
+
+  footer .copyright {
+      text-align: center;
+      padding-bottom: 0.8em;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      font-size: 1em;
+      font-weight: 400;
+  }
+
+  .icon {
+      opacity: 0.8;
+      cursor: pointer;
+  }
+
+  .icon:hover {
+      opacity: 2;
+  }
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+
+  .space-between-proj {
+      width: 100%;
+      height: 14vh;
+      background-color: transparent;
+  }
+
+ 
+
+  #landing {
+      width: 100%;
+      height: 100vh;
+      background-image: url("https://res.cloudinary.com/jimbocloud/image/upload/v1561811104/Portfolio/background-landing-desktop.jpg");
+      background-position: center;
+      background-attachment: fixed;
+      background-size: contain;
+      background-repeat: no-repeat;
+  }
+
+
+
+  #mobile-navbar {
+      display: none;
+  }
+
+  #desktop-navbar {
+      width: 100%;
+      height: 10vh;
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      z-index: 99;
+      box-shadow: 0px 5px 5px -5px grey;
+  }
+
+  .main-nav {
+      width: 74%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between-proj;
+  }
+
+  #desktop-navbar .main-nav li {
+      list-style-type: none;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  #desktop-navbar .main-nav li a {
+      font-family: 'Allerta Stencil', sans-serif;
+      text-decoration: none;
+      color: #C0AB8E;
+      font-size: 1.2em;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+
+  .home-button {
+      color: #2E4A62 !important;
+  }
+
+  #desktop-navbar .main-nav li a:hover {
+      border-top: 5px solid #F0EDE5;
+      border-bottom: 5px solid #F0EDE5;
+      color: #2E4A62;
+  }
+
+  .title {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+  }
+
+  .container {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      top: 22vh;
+  }
+
+  .name {
+      text-align: center;
+      font-family: 'Allerta Stencil', sans-serif;
+      font-size: 14px;
+      margin-top: 10px;
+  }
+
+  img.logo {
+      width: 230px;
+      height: auto;
+  }
+
+
+ 
+
+  #about {
+      height: auto;
+      width: 100%;
+      padding-bottom: 5em;
+  }
+
+  .header {
+      font-size: 2em;
+      text-transform: uppercase;
+      font-family: 'Allerta Stencil', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 3vh;
+  }
+
+  .information-box {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 3em;
+  }
+
+  .text {
+      width: 40%;
+      /* padding: ; */
+  }
+
+  .right {
+      margin-top: 2em;
+  }
+
+  #profile-photo {
+      width: 300px;
+      height: 300px;
+      box-shadow: 1px 1px 5px grey;
+      display: block;
+      margin: 0 auto;
+  }
+
+  .description-mobile {
+      display: none;
+  }
+
+  .description-desktop {
+      list-style-type: none;
+      line-height: 1.5em;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      color: #000000;
+      margin: 1.5em 0em;
+  }
+
+  .text p {
+      width: 100%;
+      font-size: 1.1em;
+      text-align: left;
+      line-height: 1.5em;
+      font-family: 'Montserrat', sans-serif;
+      margin: 1em auto;
+      color: gray;
+  }
+
+
+
+
+
+  #highlights {
+      width: 100%;
+      height: auto;
+      padding-bottom: 5em;
+  }
+
+  article.wrapper {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between-proj;
+  }
+
+  .wrapper {
+      width: 80%;
+      margin: 0 auto;
+  }
+
+  .wrapper p {
+      font-size: 1em;
+      text-align: left;
+      line-height: 1.3em;
+      font-family: 'Montserrat', sans-serif;
+      margin: 1em auto 0 auto;
+  }
+
+  .skills {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+  }
+
+  .skills li {
+      text-align: center;
+      margin: 5vh 0vw;
+      list-style-type: none;
+      font-family: 'Allerta Stencil', sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+  }
+
+  .skills li img {
+      margin: 0 auto;
+      display: block;
+      width: 8em;
+  }
+.icon img{
+    width: 100%;
+    height: 130px;
+}
+.icon p{
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1em auto 0 auto;
+}
+ 
+
+
+
+
+  #myproject {
+      height: auto;
+      width: 100%;
+      padding-bottom: 4em;
+  }
+
+  .opinions {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+
+  }
+
+  .opinions article {
+      width: 100%;
+      display: block;
+      padding: 2vh;
+  }
+  .project {
+      width: 50%;
+      height: 80%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 2px solid #83694a;
+  }
+
+  .project img {
+      width: 300px;
+      height: auto;
+      display: block;
+      position: relative;
+  }
+  .info-project h2{
+    text-align: center;
+    color: #000;
+  }
+
+
+
+
+  #contact {
+      height: auto;
+      width: 100%;
+      background-image: url("https://wallpapercave.com/wp/wp7453739.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .form {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin: 3em auto;
+  }
+
+  .text-form {
+      width: 50%;
+      padding-right: 2em;
+  }
+
+  .contact-form {
+      width: 45%;
+  }
+
+  input {
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 1px 1px 5px grey;
+      opacity: 0.8;
+      border: 1px solid #fff;
+      padding: 0.5em;
+      text-transform: uppercase;
+      width: 100%;
+  }
+
+  ::placeholder {
+      color: whitesmoke;
+      text-align: left top;
+  }
+
+  textarea {
+      font-family: 'Montserrat', sans-serif;
+      height: 10em;
+      width: 100%;
+      box-shadow: 1px 1px 5px grey;
+      opacity: 0.8;
+      border: 1px solid #fff;
+      padding: 0.5em;
+      text-transform: uppercase;
+  }
+
+  .submit {
+      font-family: 'Montserrat', sans-serif;
+      width: 50%;
+      display: block;
+      margin: 0 auto 1.5em auto;
+  }
+
+
+
+
+  footer {
+      width: 100%;
+      height: auto;
+      background-color: #000;
+      box-shadow: 1px 1px 10px grey;
+      padding-bottom: 1em;
+  }
+
+  .social-icons {
+      text-align: center;
+  }
+
+  .social-icons img {
+      width: 12vh;
+      height: auto;
+      padding: 2vh;
+      margin: 1vh;
+      display: inline-block;
+  }
+
+  footer .copyright {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1em;
+      text-align: center;
+  }
+
+  .icon {
+      opacity: 0.8;
+      cursor: pointer;
+  }
+
+  .icon:hover {
+      opacity: 1;
+  }
+
+}
+
+
